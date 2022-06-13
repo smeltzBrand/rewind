@@ -13,7 +13,7 @@ function getMessage() {
         const regex = /[^a-z0-9]/gi;
         msg = msg.replace(regex, "");
 
-        let palinObj = reverseMessageB(msg);
+        let palinObj = reverseMessageA(msg);
         displayMessage(palinObj);
     }
 
@@ -37,13 +37,9 @@ function reverseMessageB(originalWord) {
 
     let revWord = "";
 
-<<<<<<< HEAD
 
 
     return revMessage;
-=======
-    let returnObj = {};
->>>>>>> 75bf962b4db5a2c78b97116f173528b997f148c6
 
     revWord = originalWord.split("").reverse().join("");
 
@@ -67,7 +63,6 @@ function reverseMessageB(originalWord) {
 }
 
 //Final Step - view
-<<<<<<< HEAD
 function displayMessage(message) {
 
     //first get the ol element from the page
@@ -76,11 +71,4 @@ function displayMessage(message) {
 
 
 
-=======
-function displayMessage(palinObj) {
-
-    //first get the ol element from the page
-    element = document.getElementById("results");
-    element.innerHTML = `${palinObj.message} - ${palinObj.originalWord}`;
->>>>>>> 75bf962b4db5a2c78b97116f173528b997f148c6
 }
